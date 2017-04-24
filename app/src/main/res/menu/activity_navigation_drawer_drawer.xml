@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Forum">
+        <menu>
+            <item
+                android:id="@+id/nav_year_II"
+                android:title="Year II" />
+            <item
+                android:id="@+id/nav_year_III"
+                android:title="Year III" />
+            <item
+                android:id="@+id/nav_year_IV"
+                android:title="Year IV" />
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_about"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/nav_exit"
+                    android:title="Exit" />
+    </group>
+</menu>
+
+
+

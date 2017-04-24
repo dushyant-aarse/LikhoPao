@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1077321420223",
+    "firebase_url": "https://likho-pao.firebaseio.com",
+    "project_id": "likho-pao",
+    "storage_bucket": "likho-pao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077321420223:android:5e6e242384ca6536",
+        "android_client_info": {
+          "package_name": "com.code_as_da.android.likhopao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077321420223-gd098osmjrfs722us308hnpjrnh4ov3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.code_as_da.android.likhopao",
+            "certificate_hash": "d37a8064ab38cecfb701614b9bf4c7e03a431c27"
+          }
+        },
+        {
+          "client_id": "1077321420223-31v87rod12c411de2j1k57vjna5nahjm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9pOZEF8DOP1bFugeqJEykRY-0SuXc2kQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077321420223-31v87rod12c411de2j1k57vjna5nahjm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

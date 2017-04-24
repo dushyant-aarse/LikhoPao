@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Likho Pao</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="logout">Logout</string>
+    <string-array name="sophomore_subjects">
+        <item>Operating System</item>
+        <item>Database Management System</item>
+        <item>Computer Architecture</item>
+        <item>JAVA Programming</item>
+        <item>Analysis and Design of Algorithm</item>
+        <item>Digital Circuits and Systems</item>
+        <item>Object Oriented Programming and Methodology</item>
+        <item>Discrete Structures</item>
+    </string-array>
+    <string-array name="pre_final_subjects">
+        <item>Theory of Computation</item>
+        <item>Information Storage and Management</item>
+        <item>Computer Networks</item>
+        <item>Open Source Lab</item>
+        <item>Internet Technology and Network Management</item>
+        <item>Software Engineering</item>
+        <item>Computer Graphics and Multimedia</item>
+        <item>Cloud Computing</item>
+        <item>Compiler Design</item>
+    </string-array>
+    <string-array name="final_subjects">
+        <item>Distributed System</item>
+        <item>Wireless and Mobile Computing</item>
+        <item>Object Oriented Analysis and Design</item>
+        <item>Data Mining and Warehousing</item>
+        <item>Ad-Hoc Wireless Network</item>
+        <item>Artificial Intelligence</item>
+        <item>Information Security</item>
+        <item>Soft Computing</item>
+        <item>Data Science</item>
+        <item>Unix and Shell Programming</item>
+        <item>Cyber Law and Forensics</item>
+    </string-array>
+</resources>
