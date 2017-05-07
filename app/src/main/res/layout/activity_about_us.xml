@@ -37,4 +37,15 @@
         android:textColor="@color/white"
         android:text="Created by: Aditi Sakalley \nDushyant Arse"/>
 
+    <TextView
+        android:id="@+id/guidance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creators"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:text="Guided by: Dr. Roopam Gupta \nHOD, IT Department"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
 </RelativeLayout>

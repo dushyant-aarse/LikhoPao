@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 public class AboutUs extends AppCompatActivity {
 
-    TextView name, sub, creators;
+    TextView name, sub, creators, guidance;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,5 +16,6 @@ public class AboutUs extends AppCompatActivity {
         name = (TextView) findViewById(R.id.name);
         sub = (TextView) findViewById(R.id.sub);
         creators = (TextView) findViewById(R.id.creators);
+        guidance = (TextView) findViewById(R.id.guidance);
     }
 }

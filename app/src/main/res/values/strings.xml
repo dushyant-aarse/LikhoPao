@@ -39,4 +39,6 @@
         <item>Unix and Shell Programming</item>
         <item>Cyber Law and Forensics</item>
     </string-array>
+
+    <string name="desc">It\'s easy to share knowledge with your friends and teachers</string>
 </resources>

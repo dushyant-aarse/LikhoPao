@@ -1,8 +1,13 @@
 package com.code_as_da.android.likhopao;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -109,6 +114,26 @@ public class FinalYear extends AppCompatActivity {
 
         mDatabaseReference = mFirebaseDatabase.getReference().child("final/");
 
+        if (!isNetworkAvailable()) {
+            // Create an Alert Dialog
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            // Set the Alert Dialog Message
+            builder.setMessage("Internet Connection Required")
+                    .setCancelable(false)
+                    .setPositiveButton("Retry",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,
+                                                    int id) {
+                                    // Restart the Activity
+                                    Intent intent = getIntent();
+                                    finish();
+                                    startActivity(intent);
+                                }
+                            });
+            AlertDialog alert = builder.create();
+            alert.show();
+        }
+
         // Initialize message ListView and its adapter
         List<ForumMessage> friendlyMessages = new ArrayList<>();
         mMessageAdapter = new MessageAdapter(this, R.layout.item_message, friendlyMessages);
@@ -191,6 +216,13 @@ public class FinalYear extends AppCompatActivity {
                 }
             }
         };
+    }
+
+    private boolean isNetworkAvailable() {
+        // Using ConnectivityManager to check for Network Connection
+        ConnectivityManager connectivityManager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null;
     }
 
     private void onSignedOutCleanup() {
